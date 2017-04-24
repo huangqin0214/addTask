@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery的基本应用</title>
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/jquery.datetimepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/store.min.js"></script>
+    <script src="js/jquery.datetimepicker.full.js"></script>
+    <script src="js/index.js"></script>
+</head>
+<body>
+<!--返回顶部-->
+<div class="back_top">
+    <img src="images/Top.jpg" alt="">
+</div>
+
+<!--logo-->
+<div class="banner">
+    <img src="images/logo.png" alt="">
+</div>
+
+<!--导航搜索-->
+<div class="nav">
+    <div class="nav_content">
+        <div class="nav_left">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div class="nav_right">
+            <form action="">
+                <input type="text">
+                <input type="submit" value="提  交">
+            </form>
+        </div>
+    </div>
+</div>
+
+<!--内容显示-->
+<div class="content">
+    <div class="header">
+        <ul>
+            <li class="curr">待办事项</li>
+            <li>完成事项</li>
+        </ul>
+    </div>
+
+    <!--待办事项对应的盒子-->
+    <div class="body active">
+        <ul class="task"></ul>
+    </div>
+
+    <!--完成事项对应的盒子-->
+    <div class="body">
+        <ul class="finish_task"></ul>
+    </div>
+</div>
+
+<!--详情-->
+<div class="mask">
+    <div class="detail_content">
+        <div class="detail_header">
+            <span class="title"></span>
+            <span class="close">关 闭</span>
+        </div>
+        <div class="detail_body">
+            <textarea></textarea>
+            <input type="text" id="date_time">
+            <button>更 新</button>
+        </div>
+    </div>
+</div>
+
+<!--提醒铃声-->
+<video src="4188.mp3"></video>
+
+</body>
+</html>
